@@ -1,0 +1,129 @@
+.card_with_stars {
+  display: flex;
+  position: relative;
+}
+
+.card_offer {
+  position: absolute;
+  background: #EC1F46;
+  border-radius: 0px 4px 4px 0px;
+  top: 34px;
+  padding: 0px 12px;
+}
+
+.card_offer p {
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.card_image,
+.card_image img {
+  width: 100%;
+}
+
+.card_stars img {
+  width: 8px;
+  margin: 2px;
+}
+
+.card_content {
+  font-family: 'Mulish';
+  text-align: start;
+  background: #0A223D;
+  border-radius: 0px 8px 8px 0px;
+  padding: 46px 21px 35px 46px;
+}
+
+.card_content_info_title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.card_content_info_text {
+  max-width: 360px;
+  margin-top: 27px;
+  font-weight: 400;
+  font-size: 16px;
+  width: 360px;
+  line-height: 160.6%;
+  color: #FFFFFF;
+}
+
+
+.card_content_info_main {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_content_info_footer div,
+.card_content_info_main div {
+  display: flex;
+}
+
+.card_content_info_main p {
+  margin-left: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.card_content_info_main_oldCost {
+  margin-top: 37px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #FFFFFF;
+}
+
+.card_content_info_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_content_info_footer_btn {
+  background: #EC1F46;
+  border-radius: 4px;
+  padding: 11px 27px;
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.card_content_info_footer_newCost {
+  font-weight: 700;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+
+}
+
+/* Media */
+
+@media (max-width:800px) {
+  .card_with_stars {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card_content {
+    border-radius: 0px 0px 8px 8px;
+  }
+
+  .card_content_info_text {
+    width: auto;
+  }
+}
